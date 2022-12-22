@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programmito | subscribe</title>
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/sign-form.css">
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div id="navBar" class="nav-bar flex">
+      <div id="brand" class="brand">
+        <h1 id="logo">programmito</h1>
+      </div>
+      <div class="sub-menu flex">
+        <div class="subscribe flex">
+          <a id="SignIn" class="sign signPage" href="">sign-in</a>
+          <a id="SignUp" class="sign signPage" href="">sign-up</a>
+        </div>
+        <div id="menuBtn" class="menu-div flex">
+          <img id="menuIcon" src="" alt="menu icon">
+        </div>
+      </div>
+    </div>
+    <nav id="menuItems" class="menu-items flex">
+      <a id="Home" class="main-a" href=""><b><i>Home</i></b></a>
+      <div class="main-a flex">
+        <h3><b><i>Articles:</i></b></h3>
+        <a id="javascript" href="">Javascript</a>
+        <a id="SQL" href="">SQL</a>
+        <a id="python" href="">Python</a>
+        <a id="java" href="">Java</a>
+      </div>
+      <a id="subscribe" class="main-a signPage" href="">subscribe</a>
+    </nav>
+  </header>
+
+  <main id="mainTag" class="flex">
+    <div id="signIn" class="sign-in">
+      <h1>Sign In</h1>
+      <form action="" method="get" validate target="_blank">
+        <fieldset>
+          <div class="flex">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" required placeholder="Enter your E-mail.....">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="password">Password:</label>
+            <input id="password" type="password" required placeholder="Enter your Password....." minlength="4" maxlength="8">
+          </div>
+        </fieldset>
+        <div class="flex submit">
+          <input type="reset">
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+
+    <div id="signUp" class="sign-up">
+      <h1>Sign Up</h1>
+      <form action="" method="get" validate target="_blank">
+        <fieldset>
+          <legend>personal information</legend>
+          <div class="flex">
+            <label for="name">Name:</label>
+            <input id="name" type="text" required placeholder="Enter your Name.....">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="address">Address:</label>
+            <input id="address" type="text" placeholder="Enter your Address.....">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="phoneNum">Phone number:</label>
+            <input id="phoneNum" type="number" validate required placeholder="Enter your phone number.....">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" required placeholder="Enter your E-mail.....">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="password">Password:</label>
+            <input id="password" type="password" required placeholder="Enter your Password....." minlength="4" maxlength="8">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="birthday">Birthday:</label>
+            <input id="birthday" type="date">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="age">Age:</label>
+            <input id="age" type="number" placeholder="Enter your Age....." min="10" max="100">
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="place">Select your city:</label>
+            <input id="place" list="city" placeholder="Enter your City.....">
+            <datalist id="city">
+              <option value="Cairo">
+              <option value="Alexandria">
+              <option value="Giza">
+              <option value="Al-Gharbya">
+            </datalist>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Technical Information</legend>
+          <div class="flex">
+            <label for="eduLevel">Educational level:</label>
+            <input id="eduLevel" type="range" required step="10" value="80">
+          </div>
+          <hr>
+          <div class="flex">
+            <p>Which programming language are you interested in?!!</p>
+            <div>
+              <input id="Java" type="checkbox">
+              <label for="Java">Java</label>
+            </div>
+            <br>
+            <div>
+              <input id="JavaScript" type="checkbox">
+              <label for="JavaScript">JavaScript</label>
+            </div>
+            <br>
+            <div>
+              <input id="Python" type="checkbox">
+              <label for="Python">Python</label>
+            </div>
+            <br>
+            <div>
+              <input id="SQL" type="checkbox">
+              <label for="SQL">SQL</label>
+            </div>
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="OS">Select your operating system:</label>
+            <select name="OS" id="OS">
+              <option value="1">Windows</option>
+              <option value="2">Mac</option>
+              <option value="3">Linux</option>
+              <option value="4">Android</option>
+            </select>
+          </div>
+          <hr>
+          <div class="flex">
+            <label for="notes">Notes:</label>
+            <textarea id="notes" placeholder="Write anything else you need to tell us about....."></textarea>
+          </div>
+          <hr>
+          <div class="flex">
+            <p>Agree on terms and conditions?!!</p>
+            <div>
+              <input id="yes" type="radio" name="Condition" value=" yes">
+              <label style="width: 20%;" for="yes">Yes</label>
+            </div>
+            <div>  
+              <input id="no" type="radio" name="Condition" value="no">
+              <label style="width: 20%;" for="no">No</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="flex submit">
+          <input type="reset">
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="flex">
+    <div id="articles" class="flex">
+      <h6>Articles</h6>
+      <ul>
+        <li><a href="../Articles/javascript.html">Javascript</a></li>
+        <li><a href="../Articles/sql.html">SQL</a></li>
+        <li><a href="../Articles/python.html">Python</a></li>
+        <li><a href="../Articles/java.html">Java</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>made with <span class="red-heart">&heartsuit;</span> by: <span class="green-name">IQ Team ;)</span></p>
+      <small>&copy;programmito</small>
+    </div>
+    <img id="upArrow" src="../../assets/imgs/icons/up-arrow.png" alt="arrow top icon">
+  </footer>
+
+  <script src="../../js/sign.js"></script>
+</body>
+
+</html>

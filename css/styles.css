@@ -1,0 +1,585 @@
+/*
+********** import is here **********
+*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/*
+********** general styles **********
+*/
+* {
+  scroll-margin-top: 50px;
+  
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Secular One', sans-serif;
+
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+a {
+  color: #1BF0FF;
+
+  font-family: monospace;
+
+  -webkit-text-stroke: 1px #409095;
+
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+********** header section **********
+*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/imgs/bgs/home-programming-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  justify-content: space-evenly;
+  
+  padding-top: 50px;
+}
+
+header .nav-bar {
+  width: 96%;
+  height: 50px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  justify-content: space-between;
+
+  padding: 0 2%;
+}
+
+header .fixed-nav-bar {
+  background-color: #000;
+}
+
+header .nav-bar .brand {
+  text-align: center;
+
+  cursor: pointer;
+}
+
+header .nav-bar .brand h1 {
+  background: linear-gradient(90deg, #00EFFF, #FFFFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  font-size: 1.5em;
+
+  position: relative;
+}
+
+header .nav-bar .brand h1:hover:after {
+  content: "";
+  background: linear-gradient(90deg, #00EFFF, #FFFFFF);
+
+  width: 100%;
+  height: 5px;
+
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+
+  display: block;
+}
+
+header .nav-bar .sub-menu {
+  justify-content: space-evenly;
+}
+
+header .nav-bar .sub-menu .subscribe {
+  margin-right: 10px;
+}
+
+header .nav-bar .sub-menu .subscribe .sign {
+  background: linear-gradient(-225deg, #00EFFF, #FFFFFF);
+  color: #000;
+
+  -webkit-text-stroke: 0px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+header .nav-bar .sub-menu .subscribe a:hover {
+  border: 5px solid #fff;
+  transition: 1s;
+}
+
+header .nav-bar .sub-menu .menu-div {
+  cursor: pointer;
+}
+
+header .nav-bar .sub-menu .menu-div img {
+  width: auto;
+  height: 40px;
+}
+
+header .intro {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+header .intro h1 {
+  background: linear-gradient(25deg, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  -webkit-text-stroke: 1px skyblue;
+
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+
+  margin: 15px 0;
+}
+
+.intro figure {
+  width: 70%;
+  height: fit-content;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+}
+
+.intro img {
+  width: 100%;
+  height: auto;
+}
+
+.intro .scroll-down {
+  cursor: pointer;
+
+  width: 100%;
+  height: 50px;
+}
+
+.intro .scroll-down h1 {
+  color: #1BF0FF;
+
+  transform: rotate(90deg);
+
+  width: auto;
+  height: 100%;
+}
+
+.menu-items {
+  background: linear-gradient(90deg, #00EFFF, #FFFFFF);
+  color: #000;
+
+  width: 35%;
+  height: fit-content;
+
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+  
+  display: none;
+  
+  overflow: auto;
+
+  border-radius: 30px 0 0 30px;
+}
+
+.active-menu-item {
+  background-color: skyblue;
+  color: #D7FEFF;
+
+  font-weight: bolder;
+}
+
+.menu-items .main-a {
+  display: block;
+
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+.menu-items div {
+  width: 100%;
+  height: auto;
+}
+
+.menu-items div h3 {
+  margin-bottom: 10px;
+}
+
+.menu-items div a {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  padding: 10px 0;
+}
+
+.menu-items a {
+  color: #000;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  width: 100%;
+  height: auto;
+}
+
+/*
+********** main section **********
+*/
+main {
+  background: linear-gradient(90deg, #88F4FF, #D6F4FF, #90FFEC);
+}
+
+main .content {
+  background-color: black;
+  color: white;
+  
+  line-height: 1.5em;
+  
+  position: relative;
+  z-index: 0;
+  
+  width: 96%;
+  height: auto;
+  
+  padding: 20px 2%;
+  margin: 50px 0;
+}
+
+main .content::before, main .content::after {
+  content: "";
+  
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: initial;
+  
+  width: 100%;
+  height: 20px;
+  
+  position: absolute;
+  left: 0;
+}
+
+main .content::before {
+  background: url(../assets/imgs/bgs/edge_up_compressed.png);
+  
+  top: -15px;
+}
+
+main .content::after {
+  background: url(../assets/imgs/bgs/edge_down_compressed.png);
+  
+  bottom: -15px;
+}
+
+main .content .content-header {
+  padding: 10px;
+}
+
+main .content .content-links {
+  padding: 0 0 10px 30px;
+}
+
+main .sections-of-article {
+  width: 96%;
+  height: auto;
+  
+  margin: 0 2%;
+}
+
+main .sections-of-article div {
+  width: 100%;
+  height: auto;
+
+  border-bottom: 1px solid darkblue;
+  padding: 20px 0;
+}
+
+main .sections-of-article div h3 {
+  color: #000;
+
+  text-align: center;
+
+  -webkit-text-stroke: 1px snow;
+
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 20px;
+}
+
+main .sections-of-article div h3 b {
+  background-color: skyblue;
+  
+  text-align: center;
+  
+  width: auto;
+  
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+main .sections-of-article div p {
+  background: linear-gradient(225deg, #006999, #002e9a, #000877, #000d50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.75em;
+
+  margin-bottom: 20px;
+}
+
+main .sections-of-article div video {
+  width: 95%;
+  
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+main .sections-of-article div figure {
+  width: 90%;
+  height: auto;
+
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+main .sections-of-article div figure img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 30px;
+}
+
+main .sections-of-article div ul, main .sections-of-article div ol, main .sections-of-article div dl {
+  width: 90%;
+  height: auto;
+
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+main .sections-of-article div li, main .sections-of-article div dd {
+  background: linear-gradient(225deg, #056997, #00959A, #004F77, #001377);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #00135B80;
+  
+  line-height: 1.75em;
+
+  width: 100%;
+
+  margin-bottom: 10px;
+}
+
+main .sections-of-article div li ul {
+  padding-top: 10px;
+}
+
+main .sections-of-article div dt {
+  background: linear-gradient(225deg, #056997, #00959A, #004F77, #001377);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #00135B80;
+}
+
+main .sections-of-article div table {
+  text-align: left;
+
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+main .sections-of-article th {
+  background-color: #00135B;
+  color: white;
+  
+  text-align: center;
+
+  padding: 10px;
+}
+
+main .sections-of-article tr {
+  background-color: #5BABFF;
+  color: black;
+}
+
+main .sections-of-article td {
+  line-height: 1.75em;
+  
+  padding: 10px;
+}
+
+main .sections-of-article div iframe {
+  width: 90%;
+  height: 300px;
+
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+main q {
+  color: #000;
+}
+
+main cite {
+  text-indent: 3em;
+
+  width: 100%;
+}
+
+/*
+********** footer section **********
+*/
+
+footer {
+  background-color: #000;
+  color: yellow;
+
+  font-size: 0.75em;
+
+  width: 96%;
+  height: auto;
+
+  z-index: 80;
+
+  padding: 2%;
+}
+
+footer div {
+  width: 100%;
+
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+
+footer ul {
+  margin-left: 50px;
+}
+
+footer div h6 {
+  font-size: 1.5em;
+  text-align: center;
+
+  width: 100%;
+}
+
+footer .copyright {
+  text-align: center;
+
+  border: none;
+}
+
+footer .red-heart {
+  color: red;
+}
+
+footer .green-name {
+  color: #6fff00;
+}
+
+footer #upArrow {
+  cursor: pointer;
+
+  width: auto;
+  height: 8%;
+
+  display: none;
+
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 100;
+}
+
+/*
+********** responsive styles **********
+*/
+@media only screen and (min-width: 800px) {
+  header .intro {
+    justify-content: space-evenly;
+  }
+  header .intro-content {
+    width: 50%;
+    height: 40%;
+  }
+  
+  header .intro h1 {
+    width: 100%;
+    height: auto;
+  
+    margin: 0;
+  }
+  
+  .intro figure {
+    width: 40%;
+    height: 40%;
+  }
+  
+  .intro img {
+    width: auto;
+    height: 100%;
+    
+    border-radius: 30px;
+  }
+  
+  main .sections-of-article div figure, main .sections-of-article div video {
+    width: 60%;
+  }
+
+  main .sections-of-article div iframe {
+    width: 40%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  header {
+    height: auto;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programmito | java</title>
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/imgs/bgs/java-classic-business-bg.jpeg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div id="navBar" class="nav-bar flex">
+      <div id="brand" class="brand">
+        <h1 id="logo">programmito</h1>
+      </div>
+      <div class="sub-menu flex">
+        <div class="subscribe flex">
+          <a id="SignIn" class="sign signPage" href="">sign-in</a>
+          <a id="SignUp" class="sign signPage" href="">sign-up</a>
+        </div>
+        <div id="menuBtn" class="menu-div flex">
+          <img id="menuIcon" src="" alt="menu icon">
+        </div>
+      </div>
+    </div>
+    <div class="intro flex">
+      <div class="intro-content flex">
+        <h1>Java</h1>
+        <h1>A multi-platform, object-oriented, and network-centric language</h1>
+        <h1><a href="#articles">Check All Articles.</a></h1>
+      </div>
+      <figure class="flex">
+        <img src="https://camo.githubusercontent.com/7eb44783ce417ae7261fbcea3b9aa6a71a281326b36e62becd958a685e3b3ab0/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3634302f312a6c684f617833635a4154475a774568473075545952412e676966" alt="img describes topic">
+      </figure>
+      <div class="scroll-down">
+        <h1>
+          <b id="scrollToContent">»»</b>
+        </h1>
+      </div>
+    </div>
+    <nav id="menuItems" class="menu-items flex">
+      <a id="Home" class="main-a" href=""><b><i>Home</i></b></a>
+      <div class="main-a flex">
+        <h3><b><i>Articles:</i></b></h3>
+        <a id="javascript" href="">Javascript</a>
+        <a id="SQL" href="">SQL</a>
+        <a id="python" href="">Python</a>
+        <a id="java" href="">Java</a>
+      </div>
+      <a id="subscribe" class="main-a signPage" href="">subscribe</a>
+    </nav>
+  </header>
+
+  <main id="mainTag" class="flex">
+    <div class="content">
+      <div class="content-header">
+        <h4>Content:</h4>
+      </div>
+      <div class="content-links">
+        <h5><a href="#introduction">Introduction.</a></h5>
+        <h5><a href="#advantages">Advantages.</a></h5>
+        <h5><a href="#quickstart">Java Quickstart.</a></h5>
+      </div>
+    </div>
+
+    <div id="articleSections" class="sections-of-article flex">
+      <div id="introduction">
+        <h3><b>Introduction</b></h3>
+        <p>
+          Java is a popular programming language, created in 1995. Java has been one of the most popular programming languages for many years. Java is Object Oriented. However, it is not considered as pure object-oriented as it provides support for primitive data types (like int, char, etc). The Java codes are first compiled into byte code (machine-independent code). Then the byte code runs on Java Virtual Machine (JVM) regardless of the underlying architecture. Java is used in all kinds of applications like Mobile Applications (Android is Java-based), desktop applications, web applications, client-server applications, enterprise applications, and many more.
+        </p>
+        <figure>
+          <img style="width: auto; height: 300px;" src="../../assets/imgs/java-page/java-logo.png" alt="java-logo">
+        </figure>
+      </div>
+      <div id="advantages">
+        <h3><b>Advantages</b></h3>
+        <p>
+          Java syntax is similar to C/C++. But Java does not provide low-level programming functionalities like pointers. Also, Java codes are always written in the form of classes and objects. When compared with C++, Java codes are generally more maintainable because Java does not allow many things which may lead to bad/inefficient programming if used incorrectly. For example, non-primitives are always references in Java. So we cannot pass large objects (like we can do in C++) to functions, we always pass references in Java. One more example, since there are no pointers, bad memory access is also not possible. When compared with Python, Java kind of fits between C++ and Python. The programs are written in Java typically run faster than corresponding Python programs and slower than C++. Like C++, Java does static type checking, but Python does not.
+        </p>
+      </div>
+      <div id="quickstart">
+        <h3><b>Java Quickstart</b></h3>
+        <p>
+          Java file can be created using a simple text editor (like Notepad) or a complex IDE (like VS Code which is used to create this website ;). It is owned by Oracle, and more than 3 billion devices run Java. It is used for:
+        </p>
+        <ul>
+          <li> Mobile applications (specially Android apps)</li>
+          <li> Desktop applications</li>
+          <li> Web applications</li>
+          <li>Web servers and application servers </li>
+          <li> Games </li>
+          <li> Database connection</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/s5Qw3BYAlC4" title="Java Fundamentals: What is Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="flex">
+    <div id="articles" class="flex">
+      <h6>Articles</h6>
+      <ul>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="sql.html">SQL</a></li>
+        <li><a href="python.html">Python</a></li>
+        <li><a href="#">Java</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>made with <span class="red-heart">&heartsuit;</span> by: <span class="green-name">IQ Team ;)</span></p>
+      <small>&copy;programmito</small>
+    </div>
+    <img id="upArrow" src="../../assets/imgs/icons/up-arrow.png" alt="arrow top icon">
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

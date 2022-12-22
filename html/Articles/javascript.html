@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programmito | javascript</title>
+
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/imgs/bgs/js-colorful-bg.jpeg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    td {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div id="navBar" class="nav-bar flex">
+      <div id="brand" class="brand">
+        <h1 id="logo">programmito</h1>
+      </div>
+      <div class="sub-menu flex">
+        <div class="subscribe flex">
+          <a id="SignIn" class="sign signPage" href="">sign-in</a>
+          <a id="SignUp" class="sign signPage" href="">sign-up</a>
+        </div>
+        <div id="menuBtn" class="menu-div flex">
+          <img id="menuIcon" src="" alt="menu icon">
+        </div>
+      </div>
+    </div>
+    <div class="intro flex">
+      <div class="intro-content flex">
+        <h1>JavaScript</h1>
+        <h1>One of the core technologies of the World Wide Web</h1>
+        <h1><a href="#articles">Check All Articles.</a></h1>
+      </div>
+      <figure class="flex">
+        <img src="https://camo.githubusercontent.com/bdd38b0c65d47c7cba62b60617adffedb3a48d1ac6e77501b990fffb1e52815c/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f333230302f312a4f463078454d6b5742762d36397a766d4e73365244512e676966" alt="img describes topic">
+      </figure>
+      <div class="scroll-down">
+        <h1>
+          <b id="scrollToContent">»»</b>
+        </h1>
+      </div>
+    </div>
+    <nav id="menuItems" class="menu-items flex">
+      <a id="Home" class="main-a" href=""><b><i>Home</i></b></a>
+      <div class="main-a flex">
+        <h3><b><i>Articles:</i></b></h3>
+        <a id="javascript" href="">Javascript</a>
+        <a id="SQL" href="">SQL</a>
+        <a id="python" href="">Python</a>
+        <a id="java" href="">Java</a>
+      </div>
+      <a id="subscribe" class="main-a signPage" href="">subscribe</a>
+    </nav>
+  </header>
+
+  <main id="mainTag" class="flex">
+    <div class="content">
+      <div class="content-header">
+        <h4>Content:</h4>
+      </div>
+      <div class="content-links">
+        <h5><a href="#whatsJavascript">What's JavaScript?!!</a></h5>
+        <h5><a href="#importance">Importance.</a></h5>
+        <h5><a href="#inputOutput">I/O in javascript.</a></h5>
+        <h5><a href="#history">History.</a></h5>
+        <h5><a href="#typeConversions">JavaScript type conversions.</a></h5>
+        <h5><a href="#simpleExample">simple Example.</a></h5>
+      </div>
+    </div>
+
+    <div id="articleSections" class="sections-of-article flex">
+      <div id="whatsJavascript">
+        <h3><b>What's JavaScript?!!</b></h3>
+        <p>
+          Often abbreviated as JS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often
+          incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code
+          on users' devices.
+        </p>
+      </div>
+      <div id="importance">
+        <h3><b>Importance</b></h3>
+        <p>
+          JavaScript is a high-level language, often just-in-time compiled language that conforms to the ECMAScript standard.
+          It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm,
+          supporting event-driven, functional, and imperative programming styles. It has application programming interfaces
+          (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model
+          (DOM).
+        </p>
+      </div>
+      <div id="inputOutput">
+        <h3><b>I/O in javascript</b></h3>
+        <p>
+          The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics
+          facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O. JavaScript
+          engines were originally used only in web browsers, but are now core components of some servers and a variety of
+          applications. The most popular runtime system for this usage is <a href="https://nodejs.org/en/">Node.js</a>.
+        </p>
+      </div>
+      <div id="history">
+        <h3><b>History</b></h3>
+        <p>
+          Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are
+          distinct and differ greatly in design.
+        </p>
+        <dl>
+          <dt><b><i>Adoption by Microsoft:</i></b></dt>
+          <dd>
+            <ul>
+              <li>
+                Microsoft debuted Internet Explorer in 1995, leading to a browser war with Netscape. On the JavaScript front,
+                Microsoft reverse-engineered the Navigator interpreter to create its own, called JavaScript.
+              </li>
+              <li>
+                JavaScript was first released in 1996, alongside initial support for CSS and extensions to HTML. Each of these
+                implementations was noticeably different from their counterparts in Navigator.
+              </li>
+              <li>
+                These differences made it difficult for developers to make their websites work well in both browsers, leading
+                to
+                widespread use of "best viewed in Netscape" and "best viewed in Internet Explorer" logos for several years.
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt><b><i>Rise of JS:</i></b></dt>
+          <dd>
+            <ul>
+              <li>
+                November 1996, Netscape submitted JavaScript to Ecma International, as the starting point for a standard
+                specification that all browser vendors could conform to.
+              </li>
+              <li>
+                This led to the official release of the first ECMAScript language specification in June 1997.
+              </li>
+              <li>
+                The standards process continued for a few years, with the release of ECMAScript 2 in June 1998 and ECMAScript
+                3 in December 1999. Work on ECMAScript 4 began in 2000.
+              </li>
+              <li>
+                Meanwhile, Microsoft gained an increasingly dominant position in the browser market. By the early 2000s,
+                Internet Explorer's market share reached 95%.
+              </li>
+              <li>
+                This meant that JavaScript became the de facto standard for client-side scripting on the Web.
+              </li>
+              <li>
+                Microsoft initially participated in the standards process and implemented some proposals in its JavaScript
+                language, but eventually it stopped collaborating on Ecma work.
+              </li>
+              <li>
+                Thus ECMAScript 4 was mothballed.
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div id="typeConversions">
+        <h3><b>JavaScript type conversions</b></h3>
+        <table>
+          <tr>
+            <th>Left operand</th>
+            <th>Operator</th>
+            <th>Right Operand</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>[] (empty array)</td>
+            <td>+</td>
+            <td>[] (empty array)</td>
+            <td>"" (empty string)</td>
+          </tr>
+          <tr>
+            <td>[] (empty array)</td>
+            <td>+</td>
+            <td>{} (empty object)</td>
+            <td>"[object Object]" (string)</td>
+          </tr>
+          <tr>
+            <td>false (boolean)</td>
+            <td>+</td>
+            <td>[] (empty array)</td>
+            <td>"false" (string)</td>
+          </tr>
+          <tr>
+            <td>"123"(string)</td>
+            <td>+</td>
+            <td>1 (number)</td>
+            <td>"1231" (string)</td>
+          </tr>
+          <tr>
+            <td>"123" (string)</td>
+            <td>-</td>
+            <td>1 (number)</td>
+            <td>122 (number)</td>
+          </tr>
+          <tr>
+            <td>"123" (string)</td>
+            <td>-</td>
+            <td>"abc" (string)</td>
+            <td>NaN (number) </td>
+          </tr>
+        </table>
+      </div>
+      <div id="simpleExample">
+        <h3><b>Simple Example</b></h3>
+        <figure>
+          <img src="../../assets/imgs/js-page/program-to-print-pyramid-in-javascript.jpeg" alt="">
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <footer class="flex">
+    <div id="articles" class="flex">
+      <h6>Articles</h6>
+      <ul>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="sql.html">SQL</a></li>
+        <li><a href="python.html">Python</a></li>
+        <li><a href="java.html">Java</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>made with <span class="red-heart">&heartsuit;</span> by: <span class="green-name">IQ Team ;)</span></p>
+      <small>&copy;programmito</small>
+    </div>
+    <img id="upArrow" src="../../assets/imgs/icons/up-arrow.png" alt="arrow top icon">
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

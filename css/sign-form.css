@@ -1,0 +1,129 @@
+body{
+    background: linear-gradient(90deg, #00f7ff, #00868bb8, #00f7ff);
+}
+
+main .flex {
+    justify-content: flex-start;
+
+    padding: 5px;
+}
+
+header {
+    background-color: #000;
+
+    height: 50px;
+
+    padding-top: 0;
+}
+
+header .nav-bar .brand h1 {
+    background: linear-gradient(90deg, #00EFFF, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  
+    font-size: 1.5em;
+  
+    position: relative;
+  }
+  
+  header .nav-bar .brand h1:hover:after {
+    content: "";
+    background: linear-gradient(90deg, #00EFFF, #FFFFFF);
+  
+    width: 100%;
+    height: 5px;
+  
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+  
+    display: block;
+  }
+
+.sign-in, .sign-up {
+    width: 70%;
+    height: auto;
+
+    border: 10px solid;
+    border-radius: 50px;
+    padding: 25px 5%;
+    margin: 25px 5%;
+}
+
+form {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #006265;
+    text-align: center;
+
+    padding: 0 0 10px 0;
+}
+
+fieldset {
+    background: linear-gradient(-225deg, #00ffe5, #57faea, #9dfff5, #dcfffb);
+
+    border: 5px solid;
+    border-radius: 20px;
+    padding: 0 50px;
+    margin: 10px 0;
+}
+
+fieldset div {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+fieldset div div {
+    width: 100%;
+}
+
+fieldset div div input, fieldset div div label {
+    width: auto;
+}
+
+input, textarea, select {
+    background-color: #c1f5ff;
+
+    font-size: 0.75em;
+
+    width: 30%;
+
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+label {
+    width: 50%;
+}
+
+p {
+    width: 100%;
+}
+
+main .submit {
+    text-align: center;
+
+    width: 100%;
+
+    justify-content: space-evenly;
+}
+
+.submit input {
+    background: linear-gradient(90deg, #00ffe5, #57faea, #9dfff5, #dcfffb);
+
+    font-weight: bolder;
+    font-size: 1em;
+
+    display: block;
+
+    width: auto;
+}
