@@ -29,6 +29,7 @@ const javascript = document.getElementById('javascript');
 const java = document.getElementById('java');
 const SQL = document.getElementById('SQL');
 const python = document.getElementById('python');
+const subscribe = document.getElementById('subscribe');
 let SignIn = document.getElementById('SignIn');
 let SignUp = document.getElementById('SignUp');
 let menuSrc;
@@ -37,6 +38,7 @@ let signSrc;
 if (document.title == `Programmito | Home`) {
   menuSrc = 'assets/imgs/icons/menu.png';
   crossSrc = 'assets/imgs/icons/cross.png';
+  subscribe.href = 'html/subscribe/sign.html';
   signSrc = 'html/subscribe/sign.html';
   logo.addEventListener('click', () => {
     document.location = '#';
@@ -48,6 +50,7 @@ if (document.title == `Programmito | Home`) {
 } else {
   menuSrc = '../../assets/imgs/icons/menu.png';
   crossSrc = '../../assets/imgs/icons/cross.png';
+  subscribe.href = '../subscribe/sign.html';
   signSrc = '../subscribe/sign.html';
   logo.addEventListener('click', () => {
     document.location = '../../index.html';
