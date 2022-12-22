@@ -43,7 +43,7 @@ if (document.title == `Programmito | Home`) {
   })
   javascript.href = 'html/Articles/javascript.html';
   java.href = 'html/Articles/java.html';
-  SQL.href = 'html/Articles/SQL.html';
+  SQL.href = 'html/Articles/sql.html';
   python.href = 'html/Articles/python.html';
 } else {
   menuSrc = '../../assets/imgs/icons/menu.png';
@@ -55,7 +55,7 @@ if (document.title == `Programmito | Home`) {
   home.href = '../../index.html';
   javascript.href = 'javascript.html';
   java.href = 'java.html';
-  SQL.href = 'SQL.html';
+  SQL.href = 'sql.html';
   python.href = 'python.html';
 }
 menuIcon.src = menuSrc;
