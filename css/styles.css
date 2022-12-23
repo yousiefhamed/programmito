@@ -431,7 +431,7 @@ main .sections-of-article div dt {
 main .sections-of-article div table {
   text-align: left;
 
-  width: 90%;
+  width:100%;
 
   border-radius: 30px;
   margin-bottom: 20px;
@@ -449,6 +449,8 @@ main .sections-of-article th {
 main .sections-of-article tr {
   background-color: #5BABFF;
   color: black;
+
+  width: 100%;
 }
 
 main .sections-of-article td {
