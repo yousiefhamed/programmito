@@ -198,6 +198,13 @@ header .intro h1 {
 .intro .scroll-down h1 {
   color: #1BF0FF;
 
+  width: 100%;
+  height: auto;
+}
+
+.intro .scroll-down h1 b {
+  color: #1BF0FF;
+
   transform: rotate(90deg);
 
   width: auto;
