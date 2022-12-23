@@ -344,7 +344,7 @@ main .sections-of-article div h3 {
 
   -webkit-text-stroke: 1px snow;
 
-  width: 100%;
+  width: 70%;
   height: auto;
 
   margin-bottom: 20px;
@@ -358,7 +358,7 @@ main .sections-of-article div h3 b {
   width: auto;
   
   border-radius: 30px;
-  padding: 5px 0px;
+  padding: 5px 10px;
 }
 
 main .sections-of-article div p {
