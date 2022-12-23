@@ -437,6 +437,10 @@ main .sections-of-article div table {
   margin-bottom: 20px;
 }
 
+main .sections-of-article div table thead, main .sections-of-article div table tbody {
+  width: 100%;
+}
+
 main .sections-of-article th {
   background-color: #00135B;
   color: white;
