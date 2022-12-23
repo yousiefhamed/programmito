@@ -207,6 +207,8 @@ header .intro h1 {
 
   transform: rotate(90deg);
 
+  display: inline-block;
+
   width: auto;
   height: 100%;
 }
