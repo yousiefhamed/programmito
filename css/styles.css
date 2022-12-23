@@ -596,4 +596,8 @@ footer #upArrow {
   header .nav-bar .sub-menu .subscribe {
     display: none;
   }
+  
+  main .sections-of-article div table th, main .sections-of-article div table td {
+    width: 20%;
+  }
 }
