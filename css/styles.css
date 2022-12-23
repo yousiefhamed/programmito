@@ -344,7 +344,7 @@ main .sections-of-article div h3 {
 
   -webkit-text-stroke: 1px snow;
 
-  width: 70%;
+  width: 100%;
   height: auto;
 
   margin-bottom: 20px;
@@ -603,7 +603,8 @@ footer #upArrow {
     display: none;
   }
   
-  main .sections-of-article div table th, main .sections-of-article div table td {
+  main .sections-of-article div table tr th, main .sections-of-article div table tr td {
     width: 20%;
+    padding: 0;
   }
 }
