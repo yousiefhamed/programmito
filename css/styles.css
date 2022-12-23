@@ -441,6 +441,8 @@ main .sections-of-article div table {
 
 main .sections-of-article div table thead, main .sections-of-article div table tbody {
   width: 100%;
+
+  overflow: hidden;
 }
 
 main .sections-of-article th {
