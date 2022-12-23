@@ -458,6 +458,8 @@ main .sections-of-article tr {
   background-color: #5BABFF;
   color: black;
 
+  overflow: hidden;
+
   width: 100%;
 }
 
