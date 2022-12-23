@@ -33,7 +33,7 @@ const python = document.getElementById('python');
 home.href = '../../index.html';
 javascript.href = '../Articles/javascript.html';
 java.href = '../Articles/java.html';
-SQL.href = '../Articles/SQL.html';
+SQL.href = '../Articles/sql.html';
 python.href = '../Articles/python.html';
 
 let menuSrc = '../../assets/imgs/icons/menu.png';
